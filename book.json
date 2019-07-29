@@ -1,0 +1,28 @@
+{
+    "title": "编写gitbook电子书教程",
+    "description": "gitbook电子书教程",
+    "author": "sphard",
+    "language": "zh-hans",
+    "root": ".",
+
+    "plugins": [
+        "github-buttons@2.1.0",
+        "edit-link"
+    ],
+
+    "pluginsConfig": {
+
+        "github-buttons": {
+            "repo": "darrenliuwei/gitbook",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        
+        "edit-link": {
+            "base": "https://github.com/darrenliuwei/gitbook/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}
