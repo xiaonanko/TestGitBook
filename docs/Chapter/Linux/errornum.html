@@ -1,0 +1,898 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux错误码 · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhanghao">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-markdown-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="timestamp.html" />
+    
+    
+    <link rel="prev" href="C.html" />
+    
+
+    
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https:baidu.com/" target="_blank" class="custom-link">Go to Baidu</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../IntelME/Intel_ME.html">
+            
+                <a href="../IntelME/Intel_ME.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Intel ME 相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../BMC/Introduce.html">
+            
+                <a href="../BMC/Introduce.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    BMC 相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../BMC/YafuFlash.html">
+            
+                <a href="../BMC/YafuFlash.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    YafuFlash工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../BMC/Sensor.html">
+            
+                <a href="../BMC/Sensor.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Sensor相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../BMC/FRU.html">
+            
+                <a href="../BMC/FRU.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    FRU相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../BMC/UUID.html">
+            
+                <a href="../BMC/UUID.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    刷写UUID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../BMC/ChipLED.html">
+            
+                <a href="../BMC/ChipLED.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    箱耳LED相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../BMC/User.html">
+            
+                <a href="../BMC/User.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    用户与用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../BMC/Time.html">
+            
+                <a href="../BMC/Time.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    时间与时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../BMC/Storage.html">
+            
+                <a href="../BMC/Storage.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    存储系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../BMC/SEL.html">
+            
+                <a href="../BMC/SEL.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    SEL与注错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../BMC/Network.html">
+            
+                <a href="../BMC/Network.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    NCSI与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../BMC/RegMem.html">
+            
+                <a href="../BMC/RegMem.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    U-boot/Kernel/寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../BMC/Tools.html">
+            
+                <a href="../BMC/Tools.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../BMC/WebUI.html">
+            
+                <a href="../BMC/WebUI.html">
+            
+                    
+                        <b>1.3.13.</b>
+                    
+                    网页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Introduce.html">
+            
+                <a href="Introduce.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="crontab.html">
+            
+                <a href="crontab.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    crontab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="svn.html">
+            
+                <a href="svn.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Python.html">
+            
+                <a href="Python.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="C.html">
+            
+                <a href="C.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    C语言相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="errornum.html">
+            
+                <a href="errornum.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Linux错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="timestamp.html">
+            
+                <a href="timestamp.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    时间和时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="skills.html">
+            
+                <a href="skills.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools/Introduce.html">
+            
+                <a href="../Tools/Introduce.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    系统工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Tools/bcompare.html">
+            
+                <a href="../Tools/bcompare.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Beyond Compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5.html">
+            
+                <a href="../Chapter5.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Linux错误码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#linux-&#x9519;&#x8BEF;&#x7801;"><b>1.4.5.1. </b>Linux &#x9519;&#x8BEF;&#x7801;</a></li></ul></div><a href="#linux-&#x9519;&#x8BEF;&#x7801;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="linux-&#x9519;&#x8BEF;&#x7801;"><a name="linux-&#x9519;&#x8BEF;&#x7801;" class="anchor-navigation-ex-anchor" href="#linux-&#x9519;&#x8BEF;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.5.1. Linux &#x9519;&#x8BEF;&#x7801;</h1>
+<pre class="language-"><code>#ifndef _I386_ERRNO_H
+#define _I386_ERRNO_H
+#define EPERM           1 /* Operation not permitted */
+#define ENOENT          2 /* No such file or directory */
+#define ESRCH           3 /* No such process */
+#define EINTR           4 /* Interrupted system call */
+#define EIO             5 /* I/O error */
+#define ENXIO           6 /* No such device or address */
+#define E2BIG           7 /* Arg list too long */
+#define ENOEXEC         8 /* Exec format error */
+#define EBADF           9 /* Bad file number */
+#define ECHILD          10 /* No child processes */
+#define EAGAIN          11 /* Try again */
+#define ENOMEM          12 /* Out of memory */
+#define EACCES          13 /* Permission denied */  //&#x8FD9;&#x662F;&#x6211;&#x4ECA;&#x5929;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;
+#define EFAULT          14 /* Bad address */
+#define ENOTBLK         15 /* Block device required */
+#define EBUSY           16 /* Device or resource busy */
+#define EEXIST          17 /* File exists */
+#define EXDEV           18 /* Cross-device link */
+#define ENODEV          19 /* No such device */
+#define ENOTDIR         20 /* Not a directory */
+#define EISDIR          21 /* Is a directory */
+#define EINVAL          22 /* Invalid argument */
+#define ENFILE          23 /* File table overflow */
+#define EMFILE          24 /* Too many open files */
+#define ENOTTY          25 /* Not a typewriter */
+#define ETXTBSY         26 /* Text file busy */
+#define EFBIG           27 /* File too large */
+#define ENOSPC          28 /* No space left on device */
+#define ESPIPE          29 /* Illegal seek */
+#define EROFS           30 /* Read-only file system */
+#define EMLINK          31 /* Too many links */
+#define EPIPE           32 /* Broken pipe */
+#define EDOM            33 /* Math argument out of domain of func */
+#define ERANGE          34 /* Math result not representable */
+#define EDEADLK         35      /* Resource deadlock would occur */
+#define ENAMETOOLONG    36      /* File name too long */
+#define ENOLCK          37      /* No record locks available */
+#define ENOSYS          38      /* Function not implemented */
+#define ENOTEMPTY       39      /* Directory not empty */
+#define ELOOP           40      /* Too many symbolic links encountered */
+#define EWOULDBLOCK     EAGAIN  /* Operation would block */
+#define ENOMSG          42      /* No message of desired type */
+#define EIDRM           43      /* Identifier removed */
+#define ECHRNG          44      /* Channel number out of range */
+#define EL2NSYNC        45      /* Level 2 not synchronized */
+#define EL3HLT          46      /* Level 3 halted */
+#define EL3RST          47      /* Level 3 reset */
+#define ELNRNG          48      /* Link number out of range */
+#define EUNATCH         49      /* Protocol driver not attached */
+#define ENOCSI          50      /* No CSI structure available */
+#define EL2HLT          51      /* Level 2 halted */
+#define EBADE           52      /* Invalid exchange */
+#define EBADR           53      /* Invalid request descriptor */
+#define EXFULL          54      /* Exchange full */
+#define ENOANO          55      /* No anode */
+#define EBADRQC         56      /* Invalid request code */
+#define EBADSLT         57      /* Invalid slot */
+#define EDEADLOCK       EDEADLK
+#define EBFONT          59      /* Bad font file format */
+#define ENOSTR          60      /* Device not a stream */
+#define ENODATA         61      /* No data available */
+#define ETIME           62      /* Timer expired */
+#define ENOSR           63      /* Out of streams resources */
+#define ENONET          64      /* Machine is not on the network */
+#define ENOPKG          65      /* Package not installed */
+#define EREMOTE         66      /* Object is remote */
+#define ENOLINK         67      /* Link has been severed */
+#define EADV            68      /* Advertise error */
+#define ESRMNT          69      /* Srmount error */
+#define ECOMM           70      /* Communication error on send */
+#define EPROTO          71      /* Protocol error */
+#define EMULTIHOP       72      /* Multihop attempted */
+#define EDOTDOT         73      /* RFS specific error */
+#define EBADMSG         74      /* Not a data message */
+#define EOVERFLOW       75      /* Value too large for defined data type */
+#define ENOTUNIQ        76      /* Name not unique on network */
+#define EBADFD          77      /* File descriptor in bad state */
+#define EREMCHG         78      /* Remote address changed */
+#define ELIBACC         79      /* Can not access a needed shared library */
+#define ELIBBAD         80      /* Accessing a corrupted shared library */
+#define ELIBSCN         81      /* .lib section in a.out corrupted */
+#define ELIBMAX         82      /* Attempting to link in too many shared libraries */
+#define ELIBEXEC        83      /* Cannot exec a shared library directly */
+#define EILSEQ          84      /* Illegal byte sequence */
+#define ERESTART        85      /* Interrupted system call should be restarted */
+#define ESTRPIPE        86      /* Streams pipe error */
+#define EUSERS          87      /* Too many users */
+#define ENOTSOCK        88      /* Socket operation on non-socket */
+#define EDESTADDRREQ    89      /* Destination address required */
+#define EMSGSIZE        90      /* Message too long */
+#define EPROTOTYPE      91      /* Protocol wrong type for socket */
+#define ENOPROTOOPT     92      /* Protocol not available */
+#define EPROTONOSUPPORT 93      /* Protocol not supported */
+#define ESOCKTNOSUPPORT 94      /* Socket type not supported */
+#define EOPNOTSUPP      95      /* Operation not supported on transport endpoint */
+#define EPFNOSUPPORT    96      /* Protocol family not supported */
+#define EAFNOSUPPORT    97      /* Address family not supported by protocol */
+#define EADDRINUSE      98      /* Address already in use */
+#define EADDRNOTAVAIL   99      /* Cannot assign requested address */
+#define ENETDOWN        100     /* Network is down */
+#define ENETUNREACH     101     /* Network is unreachable */
+#define ENETRESET       102     /* Network dropped connection because of reset */
+#define ECONNABORTED    103     /* Software caused connection abort */
+#define ECONNRESET      104     /* Connection reset by peer */
+#define ENOBUFS         105     /* No buffer space available */
+#define EISCONN         106     /* Transport endpoint is already connected */
+#define ENOTCONN        107     /* Transport endpoint is not connected */
+#define ESHUTDOWN       108     /* Cannot send after transport endpoint shutdown */
+#define ETOOMANYREFS    109     /* Too many references: cannot splice */
+#define ETIMEDOUT       110     /* Connection timed out */
+#define ECONNREFUSED    111     /* Connection refused */
+#define EHOSTDOWN       112     /* Host is down */
+#define EHOSTUNREACH    113     /* No route to host */
+#define EALREADY        114     /* Operation already in progress */
+#define EINPROGRESS     115     /* Operation now in progress */
+#define ESTALE          116     /* Stale NFS file handle */
+#define EUCLEAN         117     /* Structure needs cleaning */
+#define ENOTNAM         118     /* Not a XENIX named type file */
+#define ENAVAIL         119     /* No XENIX semaphores available */
+#define EISNAM          120     /* Is a named type file */
+#define EREMOTEIO       121     /* Remote I/O error */
+#define EDQUOT          122     /* Quota exceeded */
+#define ENOMEDIUM       123     /* No medium found */
+#define EMEDIUMTYPE     124     /* Wrong medium type */
+#define ECANCELED       125     /* Operation Canceled */
+#define ENOKEY          126     /* Required key not available */
+#define EKEYEXPIRED     127     /* Key has expired */
+#define EKEYREVOKED     128     /* Key has been revoked */
+#define EKEYREJECTED    129     /* Key was rejected by service */
+/* for robust mutexes */
+#define EOWNERDEAD      130     /* Owner died */
+#define ENOTRECOVERABLE 131     /* State not recoverable */
+#endif
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; zhanghao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-30 15:32:56
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="C.html" class="navigation navigation-prev " aria-label="Previous page: C语言相关">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="timestamp.html" class="navigation navigation-next " aria-label="Next page: 时间和时间戳">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux错误码","level":"1.4.5","depth":2,"next":{"title":"时间和时间戳","level":"1.4.6","depth":2,"path":"Chapter/Linux/timestamp.md","ref":"Chapter/Linux/timestamp.md","articles":[]},"previous":{"title":"C语言相关","level":"1.4.4","depth":2,"path":"Chapter/Linux/C.md","ref":"Chapter/Linux/C.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-livereload","theme-comscore","-lunr","-search","search-plus@^0.0.11","simple-page-toc@^0.1.1","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","embed-pdf","chart@^0.2.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zhanghao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"include-csv":{},"emphasize":{},"ace":{},"simple-page-toc":{},"todo":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"zhbear/TestGitBook","types":["star"],"size":"small"},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhbear/TestGitBook","label":"Edit This Page"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"embed-pdf":{},"search-plus":{}},"theme":"default","author":"zhanghao","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Go to Baidu":"https:baidu.com/"}},"gitbook":"*","description":"gitbook电子书教程","extension":null},"file":{"path":"Chapter/Linux/errornum.md","mtime":"2019-07-30T07:32:56.354Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T07:45:22.404Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-markdown-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

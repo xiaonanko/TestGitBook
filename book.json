@@ -4,8 +4,8 @@
     "extension": null,
     "generator": "site",
     "title": "编写gitbook电子书教程",
-	"language": "zh-hans",
-	"root": ".",
+    "language": "zh-hans",
+    "root": ".",
     "variables": {},
     "links": {
         "sharing": {
@@ -75,13 +75,9 @@
             "edit": true
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © sugon 2018",
+            "copyright": "Copyright © zhanghao 2019",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "simple-page-toc": {
-            "maxDepth": 3,
-            "skipFirstH1": true
         },
         "sectionx": {
             "tag": "b"
