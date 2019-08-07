@@ -1,0 +1,814 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>NCSI与网络 · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhanghao">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-markdown-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="RegMem.html" />
+    
+    
+    <link rel="prev" href="SEL.html" />
+    
+
+    
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https:baidu.com/" target="_blank" class="custom-link">Go to Baidu</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../IntelME/Intel_ME.html">
+            
+                <a href="../IntelME/Intel_ME.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Intel ME 相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Introduce.html">
+            
+                <a href="Introduce.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    BMC 相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="YafuFlash.html">
+            
+                <a href="YafuFlash.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    YafuFlash工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Sensor.html">
+            
+                <a href="Sensor.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Sensor相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="FRU.html">
+            
+                <a href="FRU.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    FRU相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="UUID.html">
+            
+                <a href="UUID.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    刷写UUID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="ChipLED.html">
+            
+                <a href="ChipLED.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    箱耳LED相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="User.html">
+            
+                <a href="User.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    用户与用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Time.html">
+            
+                <a href="Time.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    时间与时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Storage.html">
+            
+                <a href="Storage.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    存储系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="SEL.html">
+            
+                <a href="SEL.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    SEL与注错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.10" data-path="Network.html">
+            
+                <a href="Network.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    NCSI与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="RegMem.html">
+            
+                <a href="RegMem.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    U-boot/Kernel/寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Tools.html">
+            
+                <a href="Tools.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="WebUI.html">
+            
+                <a href="WebUI.html">
+            
+                    
+                        <b>1.3.13.</b>
+                    
+                    网页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Linux/Introduce.html">
+            
+                <a href="../Linux/Introduce.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux/crontab.html">
+            
+                <a href="../Linux/crontab.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    crontab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Linux/svn.html">
+            
+                <a href="../Linux/svn.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Linux/Python.html">
+            
+                <a href="../Linux/Python.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Linux/C.html">
+            
+                <a href="../Linux/C.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    C语言相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Linux/errornum.html">
+            
+                <a href="../Linux/errornum.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Linux错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Linux/timestamp.html">
+            
+                <a href="../Linux/timestamp.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    时间和时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Linux/skills.html">
+            
+                <a href="../Linux/skills.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools/Introduce.html">
+            
+                <a href="../Tools/Introduce.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    系统工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Tools/bcompare.html">
+            
+                <a href="../Tools/bcompare.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Beyond Compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5.html">
+            
+                <a href="../Chapter5.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >NCSI与网络</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4FEE;&#x6539;dedicated-lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;"><b>1.3.10.1. </b>&#x4FEE;&#x6539;Dedicated Lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x6539;mac&#x4FDD;&#x5B58;&#x5230;eeprom&#x76F8;&#x5173;&#x914D;&#x7F6E;"><b>1.3.10.2. </b>&#x4FEE;&#x6539;MAC&#x4FDD;&#x5B58;&#x5230;EEPROM&#x76F8;&#x5173;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x6539;&#x5FC3;&#x8DF3;&#x706F;&#x8F6F;&#x4EF6;&#x6A21;&#x5F0F;"><b>1.3.10.3. </b>&#x4FEE;&#x6539;&#x5FC3;&#x8DF3;&#x706F;&#x8F6F;&#x4EF6;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#bmc&#x83B7;&#x53D6;ip"><b>1.3.10.4. </b>BMC&#x83B7;&#x53D6;IP</a></li><li><span class="title-icon "></span><a href="#package-id"><b>1.3.10.5. </b>Package ID</a></li><li><span class="title-icon "></span><a href="#ping&#x64CD;&#x4F5C;"><b>1.3.10.6. </b>Ping&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x767D;&#x540D;&#x5355;"><b>1.3.10.7. </b>&#x767D;&#x540D;&#x5355;</a></li><li><span class="title-icon "></span><a href="#&#x7AEF;&#x53E3;&#x6D4B;&#x8BD5;"><b>1.3.10.8. </b>&#x7AEF;&#x53E3;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x5173;&#x95ED;&#x4E0E;&#x5F00;&#x542F;ssh&#x670D;&#x52A1;"><b>1.3.10.9. </b>&#x5173;&#x95ED;&#x4E0E;&#x5F00;&#x542F;SSH&#x670D;&#x52A1;</a></li></ul></div><a href="#&#x4FEE;&#x6539;dedicated-lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4FEE;&#x6539;dedicated-lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;"><a name="&#x4FEE;&#x6539;dedicated-lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;dedicated-lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.1. &#x4FEE;&#x6539;Dedicated Lan&#x7F51;&#x53E3;&#x706F;&#x95EA;&#x70C1;&#x6A21;&#x5F0F;</h1>
+<p>&#x6587;&#x4EF6;&#xFF1A;linux/drivers/net/ethernet/aspeed/ast_ether.c</p>
+<p>&#x7B2C;239&#x884C;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;</p>
+<pre class="language-"><code> //Set the PHY  LED  to the right Mode
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 31, 0x0d04);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 31, 0x0d04);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 0x10, 0x091b);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 0x10, 0x091b);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 31, 0x0000);
+
+ //Close  Default EEE  Mode
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 31, 0x0d04);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 0x11, 0x0000);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 0x11, 0x0000);
+ ast_ether_phy_write_register(dev,  priv-&gt;phy_addr, 31, 0x0000);
+</code></pre><h1 id="&#x4FEE;&#x6539;mac&#x4FDD;&#x5B58;&#x5230;eeprom&#x76F8;&#x5173;&#x914D;&#x7F6E;"><a name="&#x4FEE;&#x6539;mac&#x4FDD;&#x5B58;&#x5230;eeprom&#x76F8;&#x5173;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;mac&#x4FDD;&#x5B58;&#x5230;eeprom&#x76F8;&#x5173;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.2. &#x4FEE;&#x6539;MAC&#x4FDD;&#x5B58;&#x5230;EEPROM&#x76F8;&#x5173;&#x914D;&#x7F6E;</h1>
+<p>&#x6587;&#x4EF6;&#xFF1A;Bootloader_ex/spx/DEFCONFIG</p>
+<p>&#x6700;&#x4E0B;&#x65B9;&#x4FEE;&#x6539;</p>
+<pre class="language-"><code>/* I2C EEPROM (AT24C128) configuration */
+#define CONFIG_I2C_CHANNEL_ID            CONFIG_SPX_FEATURE_GLOBAL_UBOOT_ENABLE_I2C_BUS
+#define CONFIG_SYS_EEPROM_ADDR            0x50
+#define    CONFIG_SYS_I2C_EEPROM_ADDR_LEN    2   
+
+/* Network Configuration */
+#define CONFIG_MACADDR_IN_EEPROM
+#define CONFIG_CMD_EEPROM                 0
+#define CONFIG_EEPROM_MACADDR_OFFSET    0x0f00
+#define CONFIG_EEPROM_MAC1ADDR_OFFSET    0x0f08
+</code></pre><h1 id="&#x4FEE;&#x6539;&#x5FC3;&#x8DF3;&#x706F;&#x8F6F;&#x4EF6;&#x6A21;&#x5F0F;"><a name="&#x4FEE;&#x6539;&#x5FC3;&#x8DF3;&#x706F;&#x8F6F;&#x4EF6;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x5FC3;&#x8DF3;&#x706F;&#x8F6F;&#x4EF6;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.3. &#x4FEE;&#x6539;&#x5FC3;&#x8DF3;&#x706F;&#x8F6F;&#x4EF6;&#x6A21;&#x5F0F;</h1>
+<p>&#x6587;&#x4EF6;&#xFF1A;uboot/arch/arm/cpu/astcommon/interrupts.c</p>
+<p>&#x6CE8;&#x91CA;&#x6389;50&#x884C;&#x5F00;&#x59CB;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x4EE3;&#x7801;</p>
+<pre class="language-"><code>+    /* Enable Software blinking mode */
++    *(UINT32 *)(HW_HEART_BEAT_STATUS_REG) = ((*(UINT32 *)(HW_HEART_BEAT_STATUS_REG)) &amp; 0xffffffef) | (1 &lt;&lt; 4);
++    *(UINT32 *)(HEART_BEAT_LED_OUTPUT_REG) = 0x01;
+</code></pre><h1 id="bmc&#x83B7;&#x53D6;ip"><a name="bmc&#x83B7;&#x53D6;ip" class="anchor-navigation-ex-anchor" href="#bmc&#x83B7;&#x53D6;ip"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.4. BMC&#x83B7;&#x53D6;IP</h1>
+<p>&#x4F7F;&#x7528;BMC&#x91CD;&#x65B0;&#x83B7;&#x53D6;DHCP IP&#x7684;&#x547D;&#x4EE4;</p>
+<pre class="language-"><code>udhcp -b -i eth0 -p /var/run/udhcpc.pid -R    &#x6DFB;&#x52A0;-R&#x80FD;&#x591F;&#x4F7F;&#x5F97;dhcp server&#x91CD;&#x65B0;&#x5206;&#x914D;ip
+</code></pre><h1 id="package-id"><a name="package-id" class="anchor-navigation-ex-anchor" href="#package-id"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.5. Package ID</h1>
+<p>&#x677F;&#x8F7D;&#x7F51;&#x5361;&#x7684;package ID&#x4E3A;1&#xFF0C;OCP-A&#x7F51;&#x5361;&#x7684;package ID&#x4E3A;0 </p>
+<h1 id="ping&#x64CD;&#x4F5C;"><a name="ping&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#ping&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.6. Ping&#x64CD;&#x4F5C;</h1>
+<p>&#x6307;&#x5B9A;&#x7F51;&#x5361;&#x8FDB;&#x884C;ping&#x64CD;&#x4F5C;    ping -I eth1 10.0.22.54</p>
+<h1 id="&#x767D;&#x540D;&#x5355;"><a name="&#x767D;&#x540D;&#x5355;" class="anchor-navigation-ex-anchor" href="#&#x767D;&#x540D;&#x5355;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.7. &#x767D;&#x540D;&#x5355;</h1>
+<p>&#x6E05;&#x7406;&#x767D;&#x540D;&#x5355;&#x8BBE;&#x7F6E;&#x7684;&#x6307;&#x4EE4;    iptables  -D INPUT -j DROP</p>
+<h1 id="&#x7AEF;&#x53E3;&#x6D4B;&#x8BD5;"><a name="&#x7AEF;&#x53E3;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x7AEF;&#x53E3;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.8. &#x7AEF;&#x53E3;&#x6D4B;&#x8BD5;</h1>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x7AEF;&#x53E3;&#x662F;&#x5426;&#x5F00;&#x542F;&#x7684;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre class="language-"><code>sudo traceroute -n -T -p port HostIP
+</code></pre><p>&#x5168;&#x90E8;&#x662F;*&#x8868;&#x793A;&#x7AEF;&#x53E3;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#xFF0C;&#x5982;&#x679C;&#x80FD;&#x627E;&#x5230;&#x5730;&#x5740;&#xFF0C;&#x8BF4;&#x660E;&#x7AEF;&#x53E3;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;</p>
+<h1 id="&#x5173;&#x95ED;&#x4E0E;&#x5F00;&#x542F;ssh&#x670D;&#x52A1;"><a name="&#x5173;&#x95ED;&#x4E0E;&#x5F00;&#x542F;ssh&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x95ED;&#x4E0E;&#x5F00;&#x542F;ssh&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10.9. &#x5173;&#x95ED;&#x4E0E;&#x5F00;&#x542F;SSH&#x670D;&#x52A1;</h1>
+<p>IPMITOOL&#x5173;&#x95ED;ssh&#x670D;&#x52A1;</p>
+<pre class="language-"><code>ipmitool -I lanplus -H 10.0.22.88 -U admin -P admin raw 0x32 0x6A 0x20 0x00 0x00 0x00 0x00 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x00 0xff 0xff 0xff 0xff 0x16 0x00 0x00 0x00 0x58 0x02 0x00 0x00 0xff 0x00
+</code></pre><p>IPMITOOL&#x5F00;&#x542F;ssh&#x670D;&#x52A1;</p>
+<pre class="language-"><code>ipmitool -I lanplus -H 10.0.22.88 -U admin -P admin raw 0x32 0x6A 0x20 0x00 0x00 0x00 0x01 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x46 0x00 0xff 0xff 0xff 0xff 0x16 0x00 0x00 0x00 0x58 0x02 0x00 0x00 0xff 0x00
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; zhanghao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-30 11:33:32
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="SEL.html" class="navigation navigation-prev " aria-label="Previous page: SEL与注错">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="RegMem.html" class="navigation navigation-next " aria-label="Next page: U-boot/Kernel/寄存器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"NCSI与网络","level":"1.3.10","depth":2,"next":{"title":"U-boot/Kernel/寄存器","level":"1.3.11","depth":2,"path":"Chapter/BMC/RegMem.md","ref":"Chapter/BMC/RegMem.md","articles":[]},"previous":{"title":"SEL与注错","level":"1.3.9","depth":2,"path":"Chapter/BMC/SEL.md","ref":"Chapter/BMC/SEL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-livereload","theme-comscore","-lunr","-search","search-plus@^0.0.11","simple-page-toc@^0.1.1","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","embed-pdf","chart@^0.2.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zhanghao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"include-csv":{},"emphasize":{},"ace":{},"simple-page-toc":{},"todo":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"zhbear/TestGitBook","types":["star"],"size":"small"},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhbear/TestGitBook","label":"Edit This Page"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"embed-pdf":{},"search-plus":{}},"theme":"default","author":"zhanghao","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Go to Baidu":"https:baidu.com/"}},"gitbook":"*","description":"gitbook电子书教程","extension":null},"file":{"path":"Chapter/BMC/Network.md","mtime":"2019-07-30T03:33:32.069Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T07:45:22.404Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-markdown-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

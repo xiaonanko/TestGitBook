@@ -5,3 +5,8 @@ pip安装Python库较慢时候可能因为超时造成安装失败，输入命�
 ```
 sudo pip --default-timeout=600 install Django
 ```
+
+#Python支持中文
+```
+#coding=utf-8
+```

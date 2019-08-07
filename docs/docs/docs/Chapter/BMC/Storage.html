@@ -1,0 +1,776 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>存储系统 · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhanghao">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-markdown-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SEL.html" />
+    
+    
+    <link rel="prev" href="Time.html" />
+    
+
+    
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https:baidu.com/" target="_blank" class="custom-link">Go to Baidu</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../IntelME/Intel_ME.html">
+            
+                <a href="../IntelME/Intel_ME.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Intel ME 相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Introduce.html">
+            
+                <a href="Introduce.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    BMC 相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="YafuFlash.html">
+            
+                <a href="YafuFlash.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    YafuFlash工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Sensor.html">
+            
+                <a href="Sensor.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Sensor相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="FRU.html">
+            
+                <a href="FRU.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    FRU相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="UUID.html">
+            
+                <a href="UUID.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    刷写UUID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="ChipLED.html">
+            
+                <a href="ChipLED.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    箱耳LED相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="User.html">
+            
+                <a href="User.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    用户与用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Time.html">
+            
+                <a href="Time.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    时间与时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="Storage.html">
+            
+                <a href="Storage.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    存储系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="SEL.html">
+            
+                <a href="SEL.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    SEL与注错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Network.html">
+            
+                <a href="Network.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    NCSI与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="RegMem.html">
+            
+                <a href="RegMem.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    U-boot/Kernel/寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Tools.html">
+            
+                <a href="Tools.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="WebUI.html">
+            
+                <a href="WebUI.html">
+            
+                    
+                        <b>1.3.13.</b>
+                    
+                    网页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Linux/Introduce.html">
+            
+                <a href="../Linux/Introduce.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux/crontab.html">
+            
+                <a href="../Linux/crontab.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    crontab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Linux/svn.html">
+            
+                <a href="../Linux/svn.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Linux/Python.html">
+            
+                <a href="../Linux/Python.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Linux/C.html">
+            
+                <a href="../Linux/C.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    C语言相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Linux/errornum.html">
+            
+                <a href="../Linux/errornum.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Linux错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Linux/timestamp.html">
+            
+                <a href="../Linux/timestamp.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    时间和时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Linux/skills.html">
+            
+                <a href="../Linux/skills.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools/Introduce.html">
+            
+                <a href="../Tools/Introduce.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    系统工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Tools/bcompare.html">
+            
+                <a href="../Tools/bcompare.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Beyond Compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5.html">
+            
+                <a href="../Chapter5.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >存储系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7F16;&#x8BD1;storelib&#x5E93;"><b>1.3.8.1. </b>&#x7F16;&#x8BD1;Storelib&#x5E93;</a></li><li><span class="title-icon "></span><a href="#&#x786C;&#x76D8;&#x72B6;&#x6001;"><b>1.3.8.2. </b>&#x786C;&#x76D8;&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#sigpipe&#x4FE1;&#x53F7;"><b>1.3.8.3. </b>SIGPIPE&#x4FE1;&#x53F7;</a></li></ul></div><a href="#&#x7F16;&#x8BD1;storelib&#x5E93;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7F16;&#x8BD1;storelib&#x5E93;"><a name="&#x7F16;&#x8BD1;storelib&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x8BD1;storelib&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.8.1. &#x7F16;&#x8BD1;Storelib&#x5E93;</h1>
+<p>storelib&#x7684;&#x4FEE;&#x6539;&#x5185;&#x5BB9;(SAS&#x5361;&#x90E8;&#x5206;)&#xFF1A;</p>
+<p>1.&#x9700;&#x8981;&#x4FEE;&#x6539;slcommon.c&#x4E2D;i2c&#x7684;&#x5E93;&#x6587;&#x4EF6;&#x540D;&#x4EE5;&#x53CA;&#x901A;&#x4FE1;&#x7684;&#x51FD;&#x6570;&#x540D;&#x79F0;&#xFF0C;&#x539F;&#x59CB;&#x4E3A;slir3_bmc_i2c.so&#x3001;master_write_on_bus&#x3001;writeread_on_bus&#xFF0C;&#x9700;&#x8981;&#x6539;&#x4E3A;/usr/local/lib/libi2c.so&#x3001;i2c_master_write_on_bus&#x3001;i2c_writeread_on_bus</p>
+<p>2.&#x4E0D;&#x80FD;&#x4FEE;&#x6539;slinternal.h&#x4E2D;&#x89C4;&#x5B9A;&#x7684;debug&#x4F7F;&#x7528;&#x7684;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x6301;slit3combo_bmc_conf.ini&#x3001;slit3combo_bmc_debug.txt&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x76EE;&#x5F55;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;&#xFF0C;&#x4FEE;&#x6539;sllinux.h&#x4E2D;&#x7684;SL_LINUX_DBG_FILE_PATH&#x5B8F;&#x5B9A;&#x4E49;&#x4FEE;&#x6539;&#x4E3A;&quot;/var/log&quot;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6302;&#x5728;&#x7684;ini&#x6587;&#x4EF6;&#x4E2D;&#x4FEE;&#x6539;DEBUGDIR=/var/log,&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x540C;&#x6837;&#x7684;&#x4FEE;&#x6539;debug&#x65E5;&#x5FD7;&#x8DEF;&#x5F84;&#x7684;&#x76EE;&#x7684;</p>
+<p>3.&#x9700;&#x8981;&#x5C06;slinternal.h&#x4E2D;&#x7684;DEFAULT_I2C_BMC_I2C_ADDRESS&#x6539;&#x4E3A;5</p>
+<p>4.&#x9700;&#x8981;&#x5207;&#x6362;slMCTP.h&#x4E2D;i2c&#x7684;&#x5B8C;&#x6574;&#x6027;&#x9A8C;&#x8BC1;&#x4E3A;FALSE&#xFF0C;SL_INTEGRITY_CHECK SL_FALSE</p>
+<p>5.&#x9700;&#x8981;&#x4FEE;&#x6539;transpI2CMsg.h&#x4E2D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;&#x4FEE;&#x6539;&#x4E3A;#define DEFAULT_I2C_MAX_WRITE_SIZE      64&#xFF0C;   #define DEFAULT_I2C_MAX_READ_SIZE       64&#xFF0C;   #define DEFAULT_I2C_MAX_READWRITE_SIZE  36&#xFF0C;&#x540C;&#x65F6;&#x9700;&#x8981;&#x4FEE;&#x6539;ini_conf&#x6587;&#x4EF6;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x4E09;&#x4E2A;&#x5B8F;&#x5B9A;&#x4E49;</p>
+<h1 id="&#x786C;&#x76D8;&#x72B6;&#x6001;"><a name="&#x786C;&#x76D8;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x786C;&#x76D8;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.8.2. &#x786C;&#x76D8;&#x72B6;&#x6001;</h1>
+<p>&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#x7684;&#x786C;&#x76D8;&#x6709;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x53EB;&#x505A;Foreign&#xFF0C;&#x8BE5;&#x72B6;&#x6001;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x786C;&#x76D8;&#x5728;&#x5176;&#x4ED6;&#x7684;Raid&#x5361;&#x4E0A;&#x505A;&#x8FC7;Raid&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x66F4;&#x6362;&#x4E86;&#x63A7;&#x5236;&#x5668;,&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x6307;&#x4EE4;&#x6E05;&#x7A7A;&#x8BE5;&#x72B6;&#x6001;</p>
+<pre class="language-"><code>/opt/MegaRAID/storcli/storcli64 /c0 /fall del
+</code></pre><h1 id="sigpipe&#x4FE1;&#x53F7;"><a name="sigpipe&#x4FE1;&#x53F7;" class="anchor-navigation-ex-anchor" href="#sigpipe&#x4FE1;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.8.3. SIGPIPE&#x4FE1;&#x53F7;</h1>
+<p>&#x4EA7;&#x751F;SIGPIPE&#x4FE1;&#x53F7;&#x7684;&#x95EE;&#x9898;&#x7814;&#x7A76;</p>
+<p>&#x4EA7;&#x751F;&#x539F;&#x56E0;&#xFF1A;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;PIPE&#x6216;&#x8005;FIFO&#x7684;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4EE5;&#x975E;&#x963B;&#x585E;&#x65B9;&#x5F0F;&#x53EA;&#x5199;&#x65B9;&#x5F0F;(O_WRONLY)&#x6253;&#x5F00;&#x7684;&#x7BA1;&#x9053;&#xFF0C;&#x5728;&#x8BFB;&#x7AEF;&#x5173;&#x95ED;&#x4EE5;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x5411;&#x7BA1;&#x9053;&#x4E2D;&#x5199;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x4F1A;&#x4EA7;&#x751F;SIGPIPE&#x7684;&#x4FE1;&#x606F;</p>
+<p>&#x907F;&#x514D;&#x65B9;&#x5F0F;&#xFF1A;&#x5728;PIPE&#x6216;&#x8005;FIFO&#x5199;&#x7AEF;&#x6253;&#x5F00;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6307;&#x5B9A;&#x6253;&#x5F00;&#x7684;&#x6743;&#x9650;&#x4E3A;&#x8BFB;&#x5199;&#x65B9;&#x5F0F;(O_WRRD)&#xFF0C;&#x8FD9;&#x6837;&#x5373;&#x4F7F;&#x5173;&#x95ED;&#x4E86;&#x8BFB;&#x7AEF;&#x7684;&#x7BA1;&#x9053;&#xFF0C;&#x5199;&#x6570;&#x636E;&#x4ECD;&#x7136;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;SIGPIPE&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x80FD;&#x9020;&#x6210;&#x6570;&#x636E;&#x7684;&#x9519;&#x4F4D;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zhanghao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-30 11:29:38
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Time.html" class="navigation navigation-prev " aria-label="Previous page: 时间与时区">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SEL.html" class="navigation navigation-next " aria-label="Next page: SEL与注错">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"存储系统","level":"1.3.8","depth":2,"next":{"title":"SEL与注错","level":"1.3.9","depth":2,"path":"Chapter/BMC/SEL.md","ref":"Chapter/BMC/SEL.md","articles":[]},"previous":{"title":"时间与时区","level":"1.3.7","depth":2,"path":"Chapter/BMC/Time.md","ref":"Chapter/BMC/Time.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-livereload","theme-comscore","-lunr","-search","search-plus@^0.0.11","simple-page-toc@^0.1.1","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","embed-pdf","chart@^0.2.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zhanghao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"include-csv":{},"emphasize":{},"ace":{},"simple-page-toc":{},"todo":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"zhbear/TestGitBook","types":["star"],"size":"small"},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhbear/TestGitBook","label":"Edit This Page"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"embed-pdf":{},"search-plus":{}},"theme":"default","author":"zhanghao","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Go to Baidu":"https:baidu.com/"}},"gitbook":"*","description":"gitbook电子书教程","extension":null},"file":{"path":"Chapter/BMC/Storage.md","mtime":"2019-07-30T03:29:38.297Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T07:45:22.404Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-markdown-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
