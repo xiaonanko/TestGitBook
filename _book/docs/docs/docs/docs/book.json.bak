@@ -1,0 +1,33 @@
+{
+    "title": "编写gitbook电子书教程",
+    "description": "gitbook电子书教程",
+    "author": "sphard",
+    "language": "zh-hans",
+    "root": ".",
+
+    "plugins": [
+        "github-buttons@2.1.0",
+        "edit-link",
+        "chapter-fold",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "splitter"
+    ],
+
+    "pluginsConfig": {
+
+        "github-buttons": {
+            "repo": "zhbear/TestGitBook",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        
+        "edit-link": {
+            "base": "https://github.com/zhbear/TestGitBook",
+            "label": "Edit This Page"
+        }
+    }
+}

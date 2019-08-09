@@ -1,0 +1,828 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Beyond Compare · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhanghao">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-markdown-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter5.html" />
+    
+    
+    <link rel="prev" href="Introduce.html" />
+    
+
+    
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https:baidu.com/" target="_blank" class="custom-link">Go to Baidu</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../IntelME/Intel_ME.html">
+            
+                <a href="../IntelME/Intel_ME.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Intel ME 相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../BMC/Introduce.html">
+            
+                <a href="../BMC/Introduce.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    BMC 相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../BMC/YafuFlash.html">
+            
+                <a href="../BMC/YafuFlash.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    YafuFlash工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../BMC/Sensor.html">
+            
+                <a href="../BMC/Sensor.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Sensor相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../BMC/FRU.html">
+            
+                <a href="../BMC/FRU.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    FRU相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../BMC/UUID.html">
+            
+                <a href="../BMC/UUID.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    刷写UUID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../BMC/ChipLED.html">
+            
+                <a href="../BMC/ChipLED.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    箱耳LED相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../BMC/User.html">
+            
+                <a href="../BMC/User.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    用户与用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../BMC/Time.html">
+            
+                <a href="../BMC/Time.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    时间与时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../BMC/Storage.html">
+            
+                <a href="../BMC/Storage.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    存储系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../BMC/SEL.html">
+            
+                <a href="../BMC/SEL.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    SEL与注错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../BMC/Network.html">
+            
+                <a href="../BMC/Network.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    NCSI与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../BMC/RegMem.html">
+            
+                <a href="../BMC/RegMem.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    U-boot/Kernel/寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../BMC/Tools.html">
+            
+                <a href="../BMC/Tools.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../BMC/WebUI.html">
+            
+                <a href="../BMC/WebUI.html">
+            
+                    
+                        <b>1.3.13.</b>
+                    
+                    网页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Linux/Introduce.html">
+            
+                <a href="../Linux/Introduce.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux/crontab.html">
+            
+                <a href="../Linux/crontab.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    crontab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Linux/svn.html">
+            
+                <a href="../Linux/svn.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Linux/Python.html">
+            
+                <a href="../Linux/Python.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Linux/C.html">
+            
+                <a href="../Linux/C.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    C语言相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Linux/errornum.html">
+            
+                <a href="../Linux/errornum.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Linux错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Linux/timestamp.html">
+            
+                <a href="../Linux/timestamp.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    时间和时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Linux/skills.html">
+            
+                <a href="../Linux/skills.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Introduce.html">
+            
+                <a href="Introduce.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    系统工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="bcompare.html">
+            
+                <a href="bcompare.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Beyond Compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5.html">
+            
+                <a href="../Chapter5.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Beyond Compare</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#beyond-compare-3-&#x5B89;&#x88C5;"><b>1.5.1.1. </b>Beyond Compare 3 &#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#beyond-compare-3-&#x6CE8;&#x518C;"><b>1.5.1.2. </b>Beyond Compare 3 &#x6CE8;&#x518C;</a></li><li><span class="title-icon "></span><a href="#beyond-comapre-4-&#x7834;&#x89E3;&#x65B9;&#x6CD5;"><b>1.5.1.3. </b>Beyond Comapre 4 &#x7834;&#x89E3;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#beyond-compare-4-&#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;"><b>1.5.1.4. </b>Beyond Compare 4 &#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;</a></li></ul></div><a href="#beyond-compare-3-&#x5B89;&#x88C5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="beyond-compare-3-&#x5B89;&#x88C5;"><a name="beyond-compare-3-&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#beyond-compare-3-&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1.1. Beyond Compare 3 &#x5B89;&#x88C5;</h1>
+<p>DEBIAN, UBUNTU</p>
+<p>Beyond Compare 4.1 and newer require matching package and OS architecture (amd64.deb or i386.deb).  Beyond Compare 3 - 4.0.7 require the i386.deb package on all supported versions of Debian and Ubuntu (32-bit and 64-bit).</p>
+<p>Beyond Compare 3 on Debian 7, 8 64-bit</p>
+<p>Enable 32-bit architecture support:<code>sudo dpkg --add-architecture i386</code></p>
+<p>Graphical Install
+Double click on the .deb package to install using the graphical package manager.</p>
+<p>Terminal Install</p>
+<pre class="language-"><code>sudo apt-get update
+sudo apt-get install gdebi
+sudo gdebi bcompare-4.1.6.21095_amd64.deb
+</code></pre><p>Terminal Uninstall</p>
+<pre class="language-"><code>sudo apt-get remove bcompare
+</code></pre><h1 id="beyond-compare-3-&#x6CE8;&#x518C;"><a name="beyond-compare-3-&#x6CE8;&#x518C;" class="anchor-navigation-ex-anchor" href="#beyond-compare-3-&#x6CE8;&#x518C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1.2. Beyond Compare 3 &#x6CE8;&#x518C;</h1>
+<p><a href="https://blog.csdn.net/u014113463/article/details/80661191" target="_blank">Ubuntu 14.04&#x5B89;&#x88C5;Beyond Compare 3&#x65B9;&#x6CD5;</a></p>
+<p>&#x6CE8;&#x518C;&#x7801;</p>
+<pre class="language-"><code>HmB5oANygQOhaStTHNa+zOKgOeWHOkeAp6d1+QwIebz6z9kwYCm9-O0jF9F79zvzed9v5UVC4VrDkDMmTM8nB+
+</code></pre><h1 id="beyond-comapre-4-&#x7834;&#x89E3;&#x65B9;&#x6CD5;"><a name="beyond-comapre-4-&#x7834;&#x89E3;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#beyond-comapre-4-&#x7834;&#x89E3;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1.3. Beyond Comapre 4 &#x7834;&#x89E3;&#x65B9;&#x6CD5;</h1>
+<p>&#x4E3B;&#x673A;&#x73AF;&#x5883;&#xFF1A;ubuntu14.04LTS</p>
+<p>&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#xFF1A;bcompare-4.1.6.21095_amd64.deb</p>
+<p>&#x8F85;&#x52A9;&#x8F6F;&#x4EF6;&#xFF1A;wxhexeditor&#xFF08;&#x53EF;&#x7528;<code>sudo apt-get install wxhexeditor</code>&#x5B89;&#x88C5;&#xFF0C;&#x4E0D;&#x7528;&#x53EF;&#x5378;&#x8F7D;&#xFF09;</p>
+<p>&#x7F51;&#x5740;&#xFF1A;<a href="http://blog.163.com/yesaidu@126/blog/static/518193072015814101859418/" target="_blank">&#x7834;&#x89E3;&#x65B9;&#x6CD5;&#x7F51;&#x5740;</a></p>
+<p>Beyond Compare&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x6587;&#x4EF6;/&#x6587;&#x4EF6;&#x5939;&#x6BD4;&#x8F83;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x652F;&#x6301;Windows&#x3001;Mac&#x548C;Linux&#x4E0B;&#x8FD0;&#x884C;&#xFF1B;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5546;&#x4E1A;&#x8F6F;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x4ED8;&#x8D39;&#x624D;&#x80FD;&#x957F;&#x671F;&#x4F7F;&#x7528;&#x5B83;&#x3002;&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x5B83;&#xFF0C;&#x5EFA;&#x8BAE;&#x8D2D;&#x4E70;&#x5B83;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x540E;&#xFF0C;&#x5907;&#x4EFD;/usr/lib/beyondcompare/BCompare&#xFF0C;</p>
+<p>&#x8FD9;&#x91CC;&#x7528;wxhexeditor&#x7F16;&#x8F91;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x5C06;&#x8BE5;&#x6587;&#x4EF6;&#x8D4B;&#x4E88;&#x5199;&#x6743;&#x9650;</p>
+<p>&#x7528;VIM+xxd&#x6216;&#x8005;MadEdit&#x6216;&#x8005;wxhexeditor&#x6253;&#x5F00;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8F91;&#x66FF;&#x6362;&#x5982;&#x4E0B;&#x5730;&#x5740;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre class="language-"><code>offset start: 0x00162233
+offset end:  0x00162387
+size: 0x155
+</code></pre><p>&#x597D;&#x50CF;&#x4E0A;&#x8FB9;&#x7684;&#x5730;&#x5740;&#x548C;&#x504F;&#x79FB;&#x6CA1;&#x4EC0;&#x4E48;&#x7528;&#xFF0C;&#x76F4;&#x63A5;&#x7528;&#x4E0B;&#x8FB9;&#x7684;&#x67E5;&#x627E;&#x5C31;&#x53EF;&#x4EE5;</p>
+<p>&#x4E0B;&#x9762;&#x4E24;&#x79CD;&#x67E5;&#x627E;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x5C31;&#x53EF;&#x4EE5;</p>
+<p>&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x67E5;&#x627E;&#x66FF;&#x6362;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x67E5;&#x627E;&#x4E32;&#xFF1A;</p>
+<pre class="language-"><code>keexjEP3t4Mue23hrnuPtY4TdcsqNiJL-5174TsUdLmJSIXKfG2NGPwBL6vnRPddT7tH29qpkneX63DO9ECSPE9rzY1zhThHERg8lHM9IBFT+rVuiY823aQJuqzxCKIE1bcDqM4wgW01FH6oCBP1G4ub01xmb4BGSUG6ZrjxWHJyNLyIlGvOhoY2HAYzEtzYGwxFZn2JZ66o4RONkXjX0DF9EzsdUef3UAS+JQ+fCYReLawdjEe6tXCv88GKaaPKWxCeaUL9PejICQgRQOLGOZtZQkLgAelrOtehxz5ANOOqCaJgy2mJLQVLM5SJ9Dli909c5ybvEhVmIC0dc9dWH
+</code></pre><p>&#x66FF;&#x6362;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>N9KmiLVlKMU7RJqnE+WXEEPI1SgglmfmLc1yVH7dqBb9ehOoKG9UE+HAE1YvH1XX2XVGeEqYUY-Tsk7YBTz0WpSpoYyPgx6Iki5KLtQ5G-aKP9eysnkuOAkrvHU8bLbGtZteGwJarev03PhfCioJL4OSqsmQGEvDbHFEbNl1qJtdwEriR+VNZts9vNNLk7UGfeNwIiqpxjk4Mn09nmSd8FhM4ifvcaIbNCRoMPGl6KU12iseSe+w+1kFsLhX+OhQM8WXcWV10cGqBzQE9OqOLUcg9n0krrR3KrohstS9smTwEx9olyLYppvC0p5i7dAx2deWvM1ZxKNs0BvcXGukR
+</code></pre><p>&#x4F7F;&#x7528;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x67E5;&#x627E;&#x66FF;&#x6362;&#x5982;&#x4E0B;&#xFF1A;
+&#x67E5;&#x627E;&#xFF1A;</p>
+<pre class="language-"><code>6B 65 65 78 6A 45 50 33 74 34 4D 75 65 32 33 68 72 6E 75 50 74 59 34 54 64 63 73 71 4E 69 4A 4C 2D 35 31 37 34 54 73 55 64 4C 6D 4A 53 49 58 4B 66 47 32 4E 47 50 77 42 4C 36 76 6E 52 50 64 64 54 37 74 48 32 39 71 70 6B 6E 65 58 36 33 44 4F 39 45 43 53 50 45 39 72 7A 59 31 7A 68 54 68 48 45 52 67 38 6C 48 4D 39 49 42 46 54 2B 72 56 75 69 59 38 32 33 61 51 4A 75 71 7A 78 43 4B 49 45 31 62 63 44 71 4D 34 77 67 57 30 31 46 48 36 6F 43 42 50 31 47 34 75 62 30 31 78 6D 62 34 42 47 53 55 47 36 5A 72 6A 78 57 48 4A 79 4E 4C 79 49 6C 47 76 4F 68 6F 59 32 48 41 59 7A 45
+74 7A 59 47 77 78 46 5A 6E 32 4A 5A 36 36 6F 34 52 4F 4E 6B 58 6A 58 30 44 46 39 45 7A 73 64 55 65 66 33 55 41 53 2B 4A 51 2B 66 43 59 52 65 4C 61 77 64 6A 45 65 36 74 58 43 76 38 38 47 4B 61 61 50 4B 57 78 43 65 61 55 4C 39 50 65 6A 49 43 51 67 52 51 4F 4C 47 4F 5A 74 5A 51 6B 4C 67 41 65 6C 72 4F 74 65 68 78 7A 35 41 4E 4F 4F 71 43 61 4A 67 79 32 6D 4A 4C 51 56 4C 4D 35 53 4A 39 44 6C 69 39 30 39 63
+35 79 62 76 45 68 56 6D 49 43 30 64 63 39 64 57 48
+</code></pre><p>&#x66FF;&#x6362;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code>4E 39 4B 6D 69 4C 56 6C 4B 4D 55 37 52 4A 71 6E 45 2B 57 58 45 45 50 49 31 53 67 67 6C 6D 66 6D 4C 63 31 79 56 48 37 64 71 42 62 39 65 68 4F 6F 4B 47 39 55 45 2B 48 41 45 31 59 76 48 31 58 58 32 58 56 47 65 45 71 59 55 59 2D 54 73 6B 37 59 42 54 7A 30 57 70 53 70 6F 59 79 50 67 78 36 49 6B 69 35 4B 4C 74 51 35 47 2D 61 4B 50 39 65 79 73 6E 6B 75 4F 41 6B 72 76 48 55 38 62 4C 62 47 74 5A 74 65 47 77 4A 61 72 65 76 30 33 50 68 66 43 69 6F 4A 4C 34 4F 53 71 73 6D 51 47 45 76 44 62 48 46 45 62 4E 6C 31 71 4A 74 64 77 45 72 69 52 2B 56 4E 5A 74 73 39 76 4E 4E 4C 6B 37 55 47 66 65 4E 77 49 69 71 70 78 6A 6B 34 4D 6E 30 39 6E 6D 53 64 38 46 68 4D 34 69 66 76 63 61 49 62 4E 43 52 6F 4D 50 47 6C 36 4B 55 31 32 69 73 65 53 65 2B 77 2B 31 6B 46 73 4C 68 58 2B 4F 68 51 4D 38 57 58 63 57 56 31 30 63 47 71 42 7A 51 45 39 4F 71 4F 4C 55 63 67 39 6E 30 6B 72 72 52 33 4B 72 6F 68 73 74 53 39 73 6D 54 77 45 78 39 6F 6C 79 4C 59 70 70 76 43 30 70 35 69 37 64 41 78 32 64 65 57 76 4D 31 5A 78 4B 4E 73 30 42 76 63 58 47 75 6B 52
+</code></pre><p>&#x6700;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x6CE8;&#x518C;&#x7801;&#x5373;&#x53EF;&#x6CE8;&#x518C;&#x6210;&#x529F;&#xFF1A;</p>
+<pre class="language-"><code>--- BEGIN LICENSE KEY ---
+gCh0q+aTeOSxkmHm+dJdnNW+BX0mvx3Bi09VC9mSmGhN3I6qxcnk8QBLjq3Xl7A3iXCPncqflD9CXI+LONqH-Mnqe4DHXwQ7dHPvON0nqztC0hVH9Ynd8PCW0G2eN9PKiptFjaxxzulLqScDMmcR5BCx2bHes-kfzybCvhhv8yEDivZcUQACxYYWwcA49DCQOoDzwDXGJKZ7YwkZWgJfGzGSaxT546hP-5phfMQF5DHq47oGBtlmpyRu5P-taBJa+txla5fyl8w9+BcB4b9FvnooVzNohzbzbgDc6g0ABh4xVfGwNc+bj1obl6h3C5+FmCRffmqaRXnq108oYakpL+++
+--- END LICENSE KEY -----
+</code></pre><h1 id="beyond-compare-4-&#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;"><a name="beyond-compare-4-&#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#beyond-compare-4-&#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1.4. Beyond Compare 4 &#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;</h1>
+<p><a href="https://blog.csdn.net/croop520/article/details/84140922" target="_blank">&#x8FC7;&#x671F;&#x540E;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x7F51;&#x5740;</a></p>
+<p>&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A;This license key has been revoked xxxxx</p>
+<p>Windows &#x7CFB;&#x7EDF;&#xFF1A;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>&#x5220;&#x9664;&#x4EE5;&#x4E0B;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5373;&#x53EF;&#x3002;</p>
+<p>C:\Users\Administrator\AppData\Roaming\Scooter Software\Beyond Compare 4</p>
+<p>Linux&#x7CFB;&#x7EDF;&#xFF1A;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>1.&#x5220;&#x9664;&#x4E0B;&#x9762;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code>/home/xxx/.config/bcompare
+</code></pre><p>2.&#x91CD;&#x65B0;&#x7834;&#x89E3;</p>
+<pre class="language-"><code>$cd /usr/lib/beyondcompare/
+
+$sudo sed -i &quot;s/keexjEP3t4Mue23hrnuPtY4TdcsqNiJL-5174TsUdLmJSIXKfG2NGPwBL6vnRPddT7tH29qpkneX63DO9ECSPE9rzY1zhThHERg8lHM9IBFT+rVuiY823aQJuqzxCKIE1bcDqM4wgW01FH6oCBP1G4ub01xmb4BGSUG6ZrjxWHJyNLyIlGvOhoY2HAYzEtzYGwxFZn2JZ66o4RONkXjX0DF9EzsdUef3UAS+JQ+fCYReLawdjEe6tXCv88GKaaPKWxCeaUL9PejICQgRQOLGOZtZQkLgAelrOtehxz5ANOOqCaJgy2mJLQVLM5SJ9Dli909c5ybvEhVmIC0dc9dWH+/N9KmiLVlKMU7RJqnE+WXEEPI1SgglmfmLc1yVH7dqBb9ehOoKG9UE+HAE1YvH1XX2XVGeEqYUY-Tsk7YBTz0WpSpoYyPgx6Iki5KLtQ5G-aKP9eysnkuOAkrvHU8bLbGtZteGwJarev03PhfCioJL4OSqsmQGEvDbHFEbNl1qJtdwEriR+VNZts9vNNLk7UGfeNwIiqpxjk4Mn09nmSd8FhM4ifvcaIbNCRoMPGl6KU12iseSe+w+1kFsLhX+OhQM8WXcWV10cGqBzQE9OqOLUcg9n0krrR3KrohstS9smTwEx9olyLYppvC0p5i7dAx2deWvM1ZxKNs0BvcXGukR+/g&quot; BCompare
+</code></pre><p>3.&#x6B64;&#x65F6;BCompare&#x6587;&#x4EF6;&#x5DF2;&#x88AB;&#x7834;&#x89E3;&#xFF0C;&#x6253;&#x5F00;&#x8F6F;&#x4EF6;&#x4F1A;&#x63D0;&#x793A;&#x201C;Trial Mode Error&#xFF01;&#x201D;&#x8868;&#x793A;&#x6210;&#x529F;&#xFF0C;&#x8F93;&#x5165;&#x4E0B;&#x9762;TEAM ZWT&#x751F;&#x6210;&#x7684;&#x5BC6;&#x94A5;&#x5373;&#x53EF;&#x6CE8;&#x518C;&#x6210;&#x529F;</p>
+<pre class="language-"><code>--- BEGIN LICENSE KEY ---
+GXN1eh9FbDiX1ACdd7XKMV7hL7x0ClBJLUJ-zFfKofjaj2yxE53xauIfkqZ8FoLpcZ0Ux6McTyNmODDSvSIHLYhg1QkTxjCeSCk6ARz0ABJcnUmd3dZYJNWFyJun14rmGByRnVPL49QH+Rs0kjRGKCB-cb8IT4Gf0Ue9WMQ1A6t31MO9jmjoYUeoUmbeAQSofvuK8GN1rLRv7WXfUJ0uyvYlGLqzq1ZoJAJDyo0Kdr4ThF-IXcv2cxVyWVW1SaMq8GFosDEGThnY7C-SgNXW30jqAOgiRjKKRX9RuNeDMFqgP2cuf0NMvyMrMScnM1ZyiAaJJtzbxqN5hZOMClUTE+++
+--- END LICENSE KEY -----
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; zhanghao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-30 15:17:54
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Introduce.html" class="navigation navigation-prev " aria-label="Previous page: 系统工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter5.html" class="navigation navigation-next " aria-label="Next page: 第五章">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Beyond Compare","level":"1.5.1","depth":2,"next":{"title":"第五章","level":"1.6","depth":1,"path":"Chapter/Chapter5.md","ref":"Chapter/Chapter5.md","articles":[]},"previous":{"title":"系统工具","level":"1.5","depth":1,"path":"Chapter/Tools/Introduce.md","ref":"Chapter/Tools/Introduce.md","articles":[{"title":"Beyond Compare","level":"1.5.1","depth":2,"path":"Chapter/Tools/bcompare.md","ref":"Chapter/Tools/bcompare.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-livereload","theme-comscore","-lunr","-search","search-plus@^0.0.11","simple-page-toc@^0.1.1","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","embed-pdf","chart@^0.2.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zhanghao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"include-csv":{},"emphasize":{},"ace":{},"simple-page-toc":{},"todo":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"zhbear/TestGitBook","types":["star"],"size":"small"},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhbear/TestGitBook","label":"Edit This Page"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"embed-pdf":{},"search-plus":{}},"theme":"default","author":"zhanghao","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Go to Baidu":"https:baidu.com/"}},"gitbook":"*","description":"gitbook电子书教程","extension":null},"file":{"path":"Chapter/Tools/bcompare.md","mtime":"2019-07-30T07:17:54.614Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T07:45:22.404Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-markdown-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
