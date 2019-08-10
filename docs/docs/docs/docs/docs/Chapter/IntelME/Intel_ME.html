@@ -1,0 +1,822 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Intel ME 相关 · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhanghao">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-markdown-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../BMC/Introduce.html" />
+    
+    
+    <link rel="prev" href="../../" />
+    
+
+    
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https:baidu.com/" target="_blank" class="custom-link">Go to Baidu</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="Intel_ME.html">
+            
+                <a href="Intel_ME.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Intel ME 相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../BMC/Introduce.html">
+            
+                <a href="../BMC/Introduce.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    BMC 相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../BMC/YafuFlash.html">
+            
+                <a href="../BMC/YafuFlash.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    YafuFlash工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../BMC/Sensor.html">
+            
+                <a href="../BMC/Sensor.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Sensor相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../BMC/FRU.html">
+            
+                <a href="../BMC/FRU.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    FRU相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../BMC/UUID.html">
+            
+                <a href="../BMC/UUID.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    刷写UUID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../BMC/ChipLED.html">
+            
+                <a href="../BMC/ChipLED.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    箱耳LED相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../BMC/User.html">
+            
+                <a href="../BMC/User.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    用户与用户组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../BMC/Time.html">
+            
+                <a href="../BMC/Time.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    时间与时区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../BMC/Storage.html">
+            
+                <a href="../BMC/Storage.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    存储系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../BMC/SEL.html">
+            
+                <a href="../BMC/SEL.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    SEL与注错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../BMC/Network.html">
+            
+                <a href="../BMC/Network.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    NCSI与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../BMC/RegMem.html">
+            
+                <a href="../BMC/RegMem.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    U-boot/Kernel/寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../BMC/Tools.html">
+            
+                <a href="../BMC/Tools.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../BMC/WebUI.html">
+            
+                <a href="../BMC/WebUI.html">
+            
+                    
+                        <b>1.3.13.</b>
+                    
+                    网页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Linux/Introduce.html">
+            
+                <a href="../Linux/Introduce.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux/crontab.html">
+            
+                <a href="../Linux/crontab.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    crontab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Linux/svn.html">
+            
+                <a href="../Linux/svn.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Linux/Python.html">
+            
+                <a href="../Linux/Python.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Linux/C.html">
+            
+                <a href="../Linux/C.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    C语言相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Linux/errornum.html">
+            
+                <a href="../Linux/errornum.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Linux错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Linux/timestamp.html">
+            
+                <a href="../Linux/timestamp.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    时间和时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Linux/skills.html">
+            
+                <a href="../Linux/skills.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools/Introduce.html">
+            
+                <a href="../Tools/Introduce.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    系统工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Tools/bcompare.html">
+            
+                <a href="../Tools/bcompare.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    Beyond Compare
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5.html">
+            
+                <a href="../Chapter5.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Intel ME 相关</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#intel-me-&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><b>1.2.1. </b>Intel ME &#x76F8;&#x5173;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;me-power&#x547D;&#x4EE4;"><b>1.2.1.1. </b>&#x67E5;&#x770B;ME Power&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;cpumem-cups&#x547D;&#x4EE4;"><b>1.2.1.2. </b>&#x67E5;&#x770B;CPU/MEM CUPS&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x7F6E;me-power-policy&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;"><b>1.2.1.3. </b>&#x8BBE;&#x7F6E;ME Power Policy&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x5237;&#x65B0;bios&#x524D;&#x540E;&#x7684;&#x52A8;&#x4F5C;"><b>1.2.1.4. </b>&#x5237;&#x65B0;BIOS&#x524D;&#x540E;&#x7684;&#x52A8;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#me-restart&#x4E0E;me-global-reset"><b>1.2.1.5. </b>ME Restart&#x4E0E;ME Global Reset</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x7F6E;me-power-policy&#x5931;&#x8D25;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x56E0;"><b>1.2.1.6. </b>&#x8BBE;&#x7F6E;ME Power Policy&#x5931;&#x8D25;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x56E0;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;me&#x4E2D;rtc&#x7684;&#x65F6;&#x95F4;"><b>1.2.1.7. </b>&#x83B7;&#x53D6;ME&#x4E2D;RTC&#x7684;&#x65F6;&#x95F4;</a></li></ul></ul></div><a href="#intel-me-&#x76F8;&#x5173;&#x64CD;&#x4F5C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="intel-me-&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><a name="intel-me-&#x76F8;&#x5173;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#intel-me-&#x76F8;&#x5173;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Intel ME &#x76F8;&#x5173;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x67E5;&#x770B;me-power&#x547D;&#x4EE4;"><a name="&#x67E5;&#x770B;me-power&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;me-power&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.1. &#x67E5;&#x770B;ME Power&#x547D;&#x4EE4;</h2>
+<p>&#x5411;ME&#x53D1;&#x9001;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x4E00;&#x79CD;&#x4F7F;&#x7528;send command&#x6307;&#x4EE4;&#xFF0C;&#x4E00;&#x79CD;&#x76F4;&#x63A5;&#x6307;&#x5B9A;bus&#x548C;slaver address&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x79CD;</p>
+<pre class="language-"><code>ipmitool -I lanplus -H BMCIP -U admin -P admin raw 0x06 0x34 0x46 0x2c 0xb8 0x1c 0x20 0x10 0xc8 0x57 0x01 0x00 0x01 0x00 0x00 0xaf
+
+ipmitool -I lanplus -H BMCIP -U admin -P admin -b 6 -t 0x2c raw 0x2e 0xc8 0x57 0x01 0x00 0x01 0x00 0x00
+</code></pre><h2 id="&#x67E5;&#x770B;cpumem-cups&#x547D;&#x4EE4;"><a name="&#x67E5;&#x770B;cpumem-cups&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;cpumem-cups&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.2. &#x67E5;&#x770B;CPU/MEM CUPS&#x547D;&#x4EE4;</h2>
+<pre class="language-"><code>ipmitool -I lanplus -H BMCIP -U admin -P admin -b 6 -t 0x2c raw 0x04 0x2d 0xbe(0xc0)
+</code></pre><p>be&#x4E3A;CPU&#x7684;&#xFF0C;c0&#x4E3A;MEM&#x7684;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;fc 40 c0     &#x7B2C;&#x4E00;&#x4F4D;&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x5360;&#x7528;&#x7387;,&#x6362;&#x7B97;&#x65B9;&#x5F0F;&#x4E3A;&#xFF08;0xfc/0xff&#xFF09;*100</p>
+<h2 id="&#x8BBE;&#x7F6E;me-power-policy&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;"><a name="&#x8BBE;&#x7F6E;me-power-policy&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x7F6E;me-power-policy&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.3. &#x8BBE;&#x7F6E;ME Power Policy&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</h2>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x53C2;&#x7167;Node Manager 4.0&#x6587;&#x6863;&#xFF0C;domain ID&#x5728;&#x524D;&#xFF0C;policy ID&#x5728;&#x540E;,&#x5E76;&#x4E14;&#x53EA;&#x6709;&#x5728;Policy Control&#x3001;Domain Control&#x3001;Global Control&#x540C;&#x65F6;enable&#x65F6;&#x5019;&#x624D;&#x80FD;&#x751F;&#x6548;</p>
+<p>domain ID&#xFF1A;</p>
+<p>=00h &#x2013; Entire platform.</p>
+<p>=01h &#x2013; CPU subsystem.</p>
+<p>=02h &#x2013; Memory subsystem.</p>
+<p>=03h &#x2013; HW Protection*.</p>
+<p>=04h &#x2013; High Power I/O subsystem</p>
+<p>1.&#x5185;&#x5B58;&#x529F;&#x8017;&#x8BFB;&#x53D6;&#xFF1A;</p>
+<pre class="language-"><code>ipmitool -b 6 -t 0x2c raw 0x2e 0xc8 0x57 0x01 0x00 0x01 0x02 0x00
+</code></pre><p>2.&#x8BBE;&#x7F6E;&#x5185;&#x5B58;&#x529F;&#x8017;&#xFF08;Domain ID&#x5728;&#x524D;&#xFF0C;Policy ID&#x5728;&#x540E;&#xFF09;</p>
+<p>  1) Disable Node Manager Policy Control</p>
+<pre class="language-"><code>  ipmitool -b 6 -t 0x2c raw 0x2e 0xc0 0x57 0x01 0x00 0x00 0x02 0x04
+</code></pre><p>  2)Create NM Policy</p>
+<pre class="language-"><code>  ipmitool -b 6 -t 0x2c raw 0x2e 0xc1 0x57 0x01 0x00 0x02 0x04 0x10 0x00 $WATT 0x00 0xe8 0x03 0x00 0x00 $WATT 0x00 0x01 0x00
+</code></pre><p>  3)Enable Node Manager Policy</p>
+<pre class="language-"><code>  ipmitool -b 6 -t 0x2c raw 0x2e 0xc0 0x57 0x01 0x00 0x05 0x02 0x04    Enable Policy Control
+  ipmitool -b 6 -t 0x2c raw 0x2e 0xc0 0x57 0x01 0x00 0x03 0x02 0x04    Enable Domain Control
+  ipmitool -b 6 -t 0x2c raw 0x2e 0xc0 0x57 0x01 0x00 0x01 0x02 0x04    Enable Global Control
+</code></pre><p>3.&#x67E5;&#x8BE2;Policy ID&#x7684;&#x4F7F;&#x80FD;&#x60C5;&#x51B5;</p>
+<pre class="language-"><code>  ipmitool -b 6 -t 0x2c raw 0x2e 0xc2 0x57 0x01 0x00 0x02 0x04
+</code></pre><p>  &#x8FD4;&#x56DE;&#x503C;&#x67E5;&#x770B;Byte5,&#x524D;&#x56DB;&#x4F4D;&#x8868;&#x793A;&#x5404;&#x79CD;&#x7B56;&#x7565;&#x7684;enable&#x60C5;&#x51B5;&#xFF0C;&#x540E;&#x56DB;&#x4F4D;&#x8868;&#x793A;Domain ID</p>
+<h2 id="&#x5237;&#x65B0;bios&#x524D;&#x540E;&#x7684;&#x52A8;&#x4F5C;"><a name="&#x5237;&#x65B0;bios&#x524D;&#x540E;&#x7684;&#x52A8;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x5237;&#x65B0;bios&#x524D;&#x540E;&#x7684;&#x52A8;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.4. &#x5237;&#x65B0;BIOS&#x524D;&#x540E;&#x7684;&#x52A8;&#x4F5C;</h2>
+<p>&#x6839;&#x636E;Node Manager 4.0&#x6587;&#x6863; &#x7B2C;24&#x9875;&#x5185;&#x5BB9;&#xFF1A;</p>
+<p>&#x5237;&#x65B0;&#x524D;&#x4E0B;0x01&#x547D;&#x4EE4;&#xFF0C;&#x5237;&#x65B0;&#x540E;&#x4E0B;0x02&#x547D;&#x4EE4;</p>
+<p>DFh&#x547D;&#x4EE4;</p>
+<p>  01 ME&#x8FDB;&#x5165;Recovery Mode&#x7684;&#x6307;&#x4EE4;</p>
+<pre class="language-"><code>  ipmitool -I -H -U -P -t 0x2c -b 6 -t 0x2c raw 0x2e  0xdf 0x57 0x01 0x00 0x01
+  ipmitool -I -H -U -P raw 0x06 0x34 0x46 0x2c 0xb8 0x1c 0x20 0x10 0xdf 0x57 0x01 0x00 0x01
+</code></pre><p>  02 ME&#x79BB;&#x5F00;Recovery Mode&#x5E76;&#x91CD;&#x542F;&#x7684;&#x547D;&#x4EE4;</p>
+<pre class="language-"><code>  ipmitool -I -H -U -P -t 0x2c -b 6 -t 0x2c raw 0x2e  0xdf 0x57 0x01 0x00 0x02
+  ipmitool -I -H -U -P raw 0x06 0x34 0x46 0x2c 0xb8 0x1c 0x20 0x10 0xdf 0x57 0x01 0x00 0x02
+</code></pre><p>  03 &#x67E5;&#x8BE2;ME&#x72B6;&#x6001;&#x6307;&#x4EE4;</p>
+<pre class="language-"><code>  ipmitool -I lanplus -H -U -P -t 0x2c -b 0x06 raw 0x06 0x04    ME selftest result
+</code></pre><h2 id="me-restart&#x4E0E;me-global-reset"><a name="me-restart&#x4E0E;me-global-reset" class="anchor-navigation-ex-anchor" href="#me-restart&#x4E0E;me-global-reset"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.5. ME Restart&#x4E0E;ME Global Reset</h2>
+<p>ME Restart  &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6709;&#x65F6;&#x5019;&#x6BD4;ME Global Reset&#x597D;&#x7528;,0x02&#x8868;&#x793A;&#x56DE;&#x590D;ME default value</p>
+<pre class="language-"><code>ipmitool -b 6 -t 0x2c raw 0x2e 0xdf 0x57 0x01 0x00 0x02
+</code></pre><h2 id="&#x8BBE;&#x7F6E;me-power-policy&#x5931;&#x8D25;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x56E0;"><a name="&#x8BBE;&#x7F6E;me-power-policy&#x5931;&#x8D25;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x56E0;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x7F6E;me-power-policy&#x5931;&#x8D25;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x56E0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.6. &#x8BBE;&#x7F6E;ME Power Policy&#x5931;&#x8D25;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x56E0;</h2>
+<p>&#x8BBE;&#x7F6E;ME Power Policy&#x7684;&#x65F6;&#x5019;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E0D;&#x8FDB;&#x53BB;&#xFF0C;&#x53D1;&#x9001;ME Power Policy&#x547D;&#x4EE4;&#x8FD4;&#x56DE;0x84&#x9519;&#x8BEF;&#x7801;&#xFF0C;&#x8868;&#x793A;Power Limit out of range</p>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x7531;&#x4E8E;ME&#x5B58;&#x5728;&#x8BBE;&#x5B9A;&#x529F;&#x8017;&#x7684;&#x6700;&#x5C0F;&#x503C;&#x4E0E;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x6700;&#x5C0F;&#x503C;&#x4E0E;&#x6700;&#x5927;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x83B7;&#x5F97;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code>ipmitool -b 6 -t 0x2c raw 0x2e 0xc9 0x57 0x01 0x00 0x01 0x10
+</code></pre><p>&#x5176;&#x4E2D;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4F4D;&#x8868;&#x793A;domain ID&#xFF1B;Byte 5[3:0]&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x83B7;&#x5F97;&#x7684;&#x503C;&#x8868;&#x793A;&#x7684;&#x542B;&#x4E49;&#xFF0C;[6:4] &#x2013; Policy Type&#x8868;&#x793A;&#x7535;&#x6E90;&#x7684;&#x67D0;&#x79CD;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;0x10</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x4E2D;&#x7684;</p>
+<p>Byte 6:7 Max Power/Thermal/Time After Reset    </p>
+<p>Byte 8:9 &#x2013; Min Power/Thermal/Time After Reset</p>
+<p>&#x5F53;&#x6307;&#x4EE4;&#x4E2D;&#x7684;&#x529F;&#x8017;&#x503C;&#x4E0D;&#x5728;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x5C31;&#x4F1A;&#x4EA7;&#x751F;0x84&#x7684;&#x9519;&#x8BEF;&#x7801;</p>
+<h2 id="&#x83B7;&#x53D6;me&#x4E2D;rtc&#x7684;&#x65F6;&#x95F4;"><a name="&#x83B7;&#x53D6;me&#x4E2D;rtc&#x7684;&#x65F6;&#x95F4;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;me&#x4E2D;rtc&#x7684;&#x65F6;&#x95F4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.7. &#x83B7;&#x53D6;ME&#x4E2D;RTC&#x7684;&#x65F6;&#x95F4;</h2>
+<p>&#x83B7;&#x53D6;ME&#x4E2D;RTC&#x7684;&#x65F6;&#x95F4;&#x6307;&#x4EE4;&#xFF0C;&#x56DE;&#x590D;&#x7684;&#x6307;&#x4EE4;&#x4E3A;LSB</p>
+<pre class="language-"><code>ipmitool -I -H -U -P -b 6 -t 0x2c raw 0x0a 0x48
+</code></pre><p>&#x6700;&#x5927;&#x503C;&#x548C;&#x6700;&#x5C0F;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;0xCB&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x8BBE;&#x7F6E;&#x540E;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;ME&#x9650;&#x5B9A;&#x529F;&#x8017;&#x529F;&#x80FD;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x4E00;&#x5B9A;&#x614E;&#x7528;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zhanghao 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-30 10:24:42
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../BMC/Introduce.html" class="navigation navigation-next " aria-label="Next page: BMC 相关">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Intel ME 相关","level":"1.2","depth":1,"next":{"title":"BMC 相关","level":"1.3","depth":1,"path":"Chapter/BMC/Introduce.md","ref":"Chapter/BMC/Introduce.md","articles":[{"title":"YafuFlash工具","level":"1.3.1","depth":2,"path":"Chapter/BMC/YafuFlash.md","ref":"Chapter/BMC/YafuFlash.md","articles":[]},{"title":"Sensor相关","level":"1.3.2","depth":2,"path":"Chapter/BMC/Sensor.md","ref":"Chapter/BMC/Sensor.md","articles":[]},{"title":"FRU相关","level":"1.3.3","depth":2,"path":"Chapter/BMC/FRU.md","ref":"Chapter/BMC/FRU.md","articles":[]},{"title":"刷写UUID","level":"1.3.4","depth":2,"path":"Chapter/BMC/UUID.md","ref":"Chapter/BMC/UUID.md","articles":[]},{"title":"箱耳LED相关操作","level":"1.3.5","depth":2,"path":"Chapter/BMC/ChipLED.md","ref":"Chapter/BMC/ChipLED.md","articles":[]},{"title":"用户与用户组","level":"1.3.6","depth":2,"path":"Chapter/BMC/User.md","ref":"Chapter/BMC/User.md","articles":[]},{"title":"时间与时区","level":"1.3.7","depth":2,"path":"Chapter/BMC/Time.md","ref":"Chapter/BMC/Time.md","articles":[]},{"title":"存储系统","level":"1.3.8","depth":2,"path":"Chapter/BMC/Storage.md","ref":"Chapter/BMC/Storage.md","articles":[]},{"title":"SEL与注错","level":"1.3.9","depth":2,"path":"Chapter/BMC/SEL.md","ref":"Chapter/BMC/SEL.md","articles":[]},{"title":"NCSI与网络","level":"1.3.10","depth":2,"path":"Chapter/BMC/Network.md","ref":"Chapter/BMC/Network.md","articles":[]},{"title":"U-boot/Kernel/寄存器","level":"1.3.11","depth":2,"path":"Chapter/BMC/RegMem.md","ref":"Chapter/BMC/RegMem.md","articles":[]},{"title":"工具","level":"1.3.12","depth":2,"path":"Chapter/BMC/Tools.md","ref":"Chapter/BMC/Tools.md","articles":[]},{"title":"网页","level":"1.3.13","depth":2,"path":"Chapter/BMC/WebUI.md","ref":"Chapter/BMC/WebUI.md","articles":[]}]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-livereload","theme-comscore","-lunr","-search","search-plus@^0.0.11","simple-page-toc@^0.1.1","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","favicon@^0.0.2","todo@^0.1.3","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","markdown-video","anchor-navigation-ex","embed-pdf","chart@^0.2.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zhanghao 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"include-csv":{},"emphasize":{},"ace":{},"simple-page-toc":{},"todo":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"zhbear/TestGitBook","types":["star"],"size":"small"},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhbear/TestGitBook","label":"Edit This Page"},"markdown-video":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"embed-pdf":{},"search-plus":{}},"theme":"default","author":"zhanghao","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Go to Baidu":"https:baidu.com/"}},"gitbook":"*","description":"gitbook电子书教程","extension":null},"file":{"path":"Chapter/IntelME/Intel_ME.md","mtime":"2019-07-30T02:24:42.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T07:45:22.404Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-markdown-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

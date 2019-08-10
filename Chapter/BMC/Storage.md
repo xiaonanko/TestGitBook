@@ -85,3 +85,34 @@ RAID 10是一个RAID 1与RAID 0的组合体，它是利用奇偶校验实现条�
 
 
 ![RAID50](./Picture/Raid50.gif)
+
+#利用Storecli改变物理硬盘状态
+
+1.查看当前所有物理磁盘状态
+```
+/opt/MegaRAID/storcli/storcli64 /c0 /eall /sall show all
+```
+
+2.修改某块磁盘状态
+```
+/opt/MegaRAID/storcli/storcli64 /cx /ex /sx set good/offline/online/missing
+```
+从JBOD修改为UG需要单独加入一个参数 force
+```
+/opt/MegaRAID/storcli/storcli64 /c0 /e69 /s7 set good force
+```
+
+3.初始化某个磁盘
+```
+/opt/MegaRAID/storcli/storcli64 /cx /ex /sx start initialization
+```
+
+4.查看某个初始化的物理磁盘进度
+```
+/opt/MegaRAID/storcli/storcli64 /cx /ex /sx show initialization
+```
+
+5.定位某块物理磁盘
+```
+/opt/MegaRAID/storcli/storcli64 /cx /ex /sx start locate
+```
